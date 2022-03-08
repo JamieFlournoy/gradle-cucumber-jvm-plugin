@@ -7,7 +7,7 @@ import nebula.test.functional.ExecutionResult
 class CucumberParallelSpec extends IntegrationSpec {
 
     @Override
-    protected List<String> calculateArguments(String... args) {
+    public List<String> calculateArguments(String... args) {
         def newArgs = ['--warning-mode', 'all']
         if (args) {
             newArgs.addAll(args)
