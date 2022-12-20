@@ -1,7 +1,7 @@
 package cucumber.steps
 
-import cucumber.api.java.en.When
-import cucumber.api.java.en.Then
+import io.cucumber.java.en.When
+import io.cucumber.java.en.Then
 
 class TestSteps {
     @When('I throw an exception')
@@ -24,7 +24,7 @@ class TestSteps {
         assert 1 == 2
     }
 
-    @Then('the value of sysprop (.*) is (.*)')
+    @Then('^the value of sysprop (.*) is (.*)$')
     def checkSysprop(String key, String value) {
         assert System.properties.getProperty(key) == value
     }

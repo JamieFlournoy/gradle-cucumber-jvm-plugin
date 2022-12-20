@@ -34,7 +34,7 @@ class CucumberParallelSpec extends IntegrationSpec {
 
             dependencies {
                 implementation 'org.codehaus.groovy:groovy-all:2.5.8'
-                implementation 'io.cucumber:cucumber-java:4.8.0'
+                implementation 'io.cucumber:cucumber-java:7.10.1'
             }
 
             cucumberTest {

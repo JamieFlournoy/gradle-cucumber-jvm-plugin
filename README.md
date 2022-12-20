@@ -54,7 +54,7 @@ repositories {
 }
 
 dependencies {
-    cucumberTestCompile 'io.cucumber:cucumber-java:6.10.2'
+    cucumberTestImplementation 'io.cucumber:cucumber-java:7.10.1'
     // To use JUnit assertions in the step definitions:
     cucumberTestCompile 'junit:junit:4.13'
 }
@@ -118,8 +118,8 @@ repositories {
 }
 
 dependencies {
-    add("cucumberTestCompile", "io.cucumber:cucumber-java:6.10.2")
-    add("cucumberTestCompile", "junit:junit:4.13")
+    add("cucumberTestImplementation", "io.cucumber:cucumber-java:7.10.1")
+    add("cucumberTestImplementation", "junit:junit:4.13")
 }
 ```
 
